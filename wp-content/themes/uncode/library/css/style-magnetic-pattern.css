@@ -1,0 +1,22 @@
+.uncode-bg-magnetic {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: var(--bgm-index);
+}
+.uncode-bg-magnetic .pattern-img {
+  aspect-ratio: var(--bgm-ratio);
+  border-radius: var(--bgm-radius);
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+  user-select: none;
+  width: var(--bgm-width);
+  object-fit: cover;
+}

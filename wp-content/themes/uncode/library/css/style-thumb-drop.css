@@ -1,0 +1,29 @@
+.uncode-bg-drop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: auto;
+  z-index: var(--bgm-index);
+}
+@media screen and (hover: none) and (pointer: coarse) {
+  .uncode-bg-drop,
+  .uncode-bg-drop * {
+    pointer-events: none !important;
+  }
+}
+.uncode-bg-drop .drop-img {
+  aspect-ratio: var(--bgm-ratio);
+  border-radius: var(--bgm-radius);
+  pointer-events: none;
+  object-fit: cover;
+}
+.uncode-bg-drop + .row {
+  pointer-events: none;
+}
+body.compose-mode .uncode-bg-drop,
+body.compose-mode .uncode-bg-drop * {
+  pointer-events: none !important;
+}

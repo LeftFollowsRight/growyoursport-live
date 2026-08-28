@@ -226,14 +226,47 @@ body.custom-background { background-color: #0066bf; }
     <hr class="unseparator border-,Default-color separator-no-padding">
 </div>
 
-<div class="wpcf7" id="contact-form" lang="en-US" dir="ltr">
-<form action="https://formspree.io/f/xbgjjqzz" method="POST" class="contact-form" aria-label="Contact form">
+```html
+<form action="https://formspree.io/f/xbgjjqzz" method="POST" aria-label="Contact form">
+
 <div class="wpcf7-inline-wrapper">
-	<p class="wpcf7-inline-field"><span class="wpcf7-form-control-wrap"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name" type="text" name="first-name" required></span>
-	</p>
-	<p class="wpcf7-inline-field"><span class="wpcf7-form-control-wrap"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last Name" type="text" name="last-name" required></span>
-	</p>
+<p class="wpcf7-inline-field">
+<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" placeholder="First Name" type="text" name="first-name" required>
+</p>
+
+<p class="wpcf7-inline-field">
+<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" placeholder="Last Name" type="text" name="last-name" required>
+</p>
 </div>
+
+<div class="wpcf7-inline-wrapper">
+<p class="wpcf7-inline-field">
+<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" placeholder="Email" type="email" name="email" required>
+</p>
+
+<p class="wpcf7-inline-field">
+<input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" placeholder="Website" type="text" name="website">
+</p>
+</div>
+
+<p>
+<textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" placeholder="Message" name="message"></textarea>
+</p>
+
+<p>
+<label>
+<input type="checkbox" name="privacy" value="accepted" required>
+<span>Check here if you accept our terms (<a href="#">Privacy Policy</a>)</span>
+</label>
+</p>
+
+<p>
+<input class="wpcf7-form-control wpcf7-submit has-spinner btn btn-accent btn-block" type="submit" value="Click the button">
+</p>
+
+</form>
+```
+
 <div class="wpcf7-inline-wrapper">
 	<p class="wpcf7-inline-field"><span class="wpcf7-form-control-wrap"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" type="email" name="email" required></span>
 	</p>
